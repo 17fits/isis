@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:17fits/isis.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/root/sites/isis'
+set :deploy_to, '/var/www/isis'
 
 # Default value for :scm is :git
 # set :scm, :git
