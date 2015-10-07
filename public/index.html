@@ -949,16 +949,10 @@
 
                 <div class="block widget_text col-md-3 col-sm-4">
                     <h3>关于我们</h3>
-                    <p>北京市海淀区苏州街维亚大厦9层<br> 
-                        <span><strong>Phone:</strong> </span>+86 13800138000<br>
+                    <p>北京·海淀区苏州街12号西屋国际公寓E座1601<br> 
+                        <span><strong>Phone:</strong> </span>010-82873575<br>
                         <span><strong>Email:</strong> </span>
                         <a href="mailto:info@company.com">abc@company.com</a><br> 
-                    </p>
-                    <p>
-                        <a class="socialico-twitter" href="#" title="Twitter">#</a>
-                        <a class="socialico-facebook" href="#" title="Facebook">#</a>
-                        <a class="socialico-google" href="#" title="Google">#</a>
-                        <a class="socialico-linkedin" href="#" title="Lindedin">#</a>
                     </p>
                 </div>
 
@@ -1027,8 +1021,7 @@
         <script src="js/main.js"></script>
 	<script>
 	    window.config = {}
-            // ApiHost = "http://hercules.17fits.com"
-            ApiHost = "http://127.0.0.1:4000"
+	    ApiHost = location.href.match(/17fits/) != null ?  "http://hercules.17fits.com" : "http://127.0.0.1:4000"
 	    $coaches = $(".vertical-slider")
 	    $.getJSON(ApiHost + "/api/coaches",
 	            function(res) {
