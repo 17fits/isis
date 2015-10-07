@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>FITS健身</title>
+        <title>17健身-17fits.com</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -691,33 +691,8 @@
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    
                     <!--vertical slider -->
                     <div class="vertical-slider">
-                        <div class="slide media darkgrey_section">
-                            <a href="#" class="pull-left">
-                                <img src="example/trainer-vertical1.jpg" alt="image01" class="media-object">
-                            </a>
-
-                            <div class="media-body">
-                                <h3>杜垚</h3>
-                                <p><a href="#">Body Balance</a></p>
-                                <p>融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。</p>
-                            </div>
-                        </div>
-
-                        <div class="slide media light_section">
-                            <a href="#" class="pull-left">
-                                <img src="example/trainer-vertical2.jpg" alt="image01" class="media-object">
-                            </a>
-
-                            <div class="media-body">
-                                <h3>谷文荣</h3>
-                                <p><a href="#">Body Jam</a></p>
-                                <p>融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。</p>
-                            </div>
-                        </div>
-                       
                     </div><!-- End of vertical slider -->
                 </div>
                 
@@ -1010,7 +985,7 @@
             <div class="row">
 
                 <div class="col-sm-12 text-center">
-                    Copyright - Sports &amp; Life Template by <a href="#">MW Templates</a>
+                    Copyright - 17fits &amp; 17fits Tech
                 </div>
             </div>
         </div>
@@ -1048,10 +1023,23 @@
         <script src='js/vendor/jquery.funnyText.min.js'></script>
         <script src='twitter/jquery.tweet.min.js'></script>
 
-
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+	<script>
+	    window.config = {}
+            // ApiHost = "http://hercules.17fits.com"
+            ApiHost = "http://127.0.0.1:4000"
+	    $coaches = $(".vertical-slider")
+	    $.getJSON(ApiHost + "/api/coaches",
+	            function(res) {
+		           data = res.data;
+			   data.forEach(function(d, i){
+				   var cname = i%2 == 0 ? "darkgrey" : "light";
+				   $coaches.append('<div class="slide media '+cname+'_section"><a href="#" class="pull-left"><img src="'+ApiHost + d.head_image +'" class="media-object"></a> <div class="media-body"> <h3>'+d.name+'</h3> <p>' + d.personal_record +'</p> </div> </div>') 
+			   });
 
-
+		    } 
+	    )
+	</script>
     </body>
 </html>
