@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
         <title>17健身-17fits.com</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,9 +35,9 @@
                     <li class="" data-to="mnav" data-target="2">
                         <a href="index.html#">门店</a>
                     </li>
-                    <li class="">
+                    <!-- <li class="">
                         <a href="index.html#">活动</a>
-                    </li>                                        
+                    </li>                                         -->
                     <li class="" data-to="mnav" data-target="3">
                         <a href="index.html#">关于我们</a>
                     </li>
@@ -52,7 +53,7 @@
         <div id="slide1" class="land parallax shown">
 
             <div class="slide_description dark">
-                <h3><span>完美身材</span></h3>
+                <h3><span>体育与生活</span></h3>
                 <h2><span>出发完美运动能量</span></h2>
                 <p><a href="index.html#" class="theme_btn">立即试课</a></p>
             </div>
@@ -62,7 +63,7 @@
         <div id="slide2" class="land parallax not_shown">
 
             <div class="slide_description dark">
-                <h3><span>减脂塑性</span></h3>
+                <h3><span>体育与生活</span></h3>
                 <h2><span>出发完美运动能量</span></h2>
                 <p><a href="index.html#" class="theme_btn">立即试课</a></p>
             </div>
@@ -72,7 +73,7 @@
         <div id="slide3" class="land parallax not_shown">
 
              <div class="slide_description dark">
-                <h3><span>完美身形</span></h3>
+                <h3><span>体育与生活</span></h3>
                 <h2><span>出发完美运动能量</span></h2>
                 <p><a href="index.html#" class="theme_btn">立即试课</a></p>
             </div>
@@ -87,25 +88,23 @@
                 <div class="col-sm-12">
                     <ul class="nav nav-tabs nav-justified main-tab" id="js-mnav">
                         <li class="active">
-                            <a data-toggle="tab" class="slide1" href="index.html#1">金牌教练</a>
+                            <a data-toggle="tab" data-to="0" class="slide1" href="index.html#1">金牌教练</a>
                         </li>
                         <li class="">
-                            <a data-toggle="tab" class="slide2" href="index.html#2">门店</a>
+                            <a data-toggle="tab" data-to="1" class="slide2" href="index.html#2">门店</a>
                         </li>
                         <li class="">
-                            <a data-toggle="tab" class="slide3" href="index.html#3">关于我们</a>
+                            <a data-toggle="tab" data-to="2" class="slide3" href="index.html#3">关于我们</a>
                         </li>
                     </ul>
-                    <div class="tab-content">
-                        <div class="row">
-                            <div class="col-sm-4" id="js-caoch">    
-                            </div>
-                            <div class="col-sm-4" id="js-store">
-                            </div>
+                    <div class="tab-content" id="js-mtab-lst">
+                        <div class="row" id="js-caoch"></div>
+                        <div class="row" id="js-store" style="display:none;"></div>
+                        <div class="row" id="js-about" style="display:none;">
                             <div class="col-sm-4">
                                 <h3>关于我们</h3>
                                 <p>
-                                    <i class="rt-icon-earth"></i> <strong>65 Santa Monica Blvd</strong>, , CA 97845, US
+                                    <i class="rt-icon-earth"></i> <strong>65 Santa Monica Blvd</strong>, LA, CA 97845, US
                                 </p>
                                 <p>
                                     <i class="rt-icon-newspaper"></i> +91 544 567 8943
@@ -121,6 +120,24 @@
             </div>
         </div>
     </section>
+
+    <!-- <section id="info" class="dark_section bg_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    
+                    <h2><strong><span class="highlight">FITS</span></strong> 健身会所</h2>
+                    <h3></h3>
+                    <p>
+                        汇聚全球专业健身教练，融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。旗下会所所拥有的便利地段优势、定制式私人教练服务、创新级别的团体操课以及多元的力量、有氧和功能型健身设备，让菲乐思飞成为健身爱好精英的汇合之地，同时也让快乐、美妙的运动体验协助每一位会员创造奇妙而美丽的人生。
+                    </p>
+                    <p>
+                        <a href="index.html#" class="theme_btn">立即试课</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <section id="events" class="darkgrey_section">
         <div class="container">
@@ -181,200 +198,9 @@
         </div>
     </section>
 
-    <!-- <section id="classes" class="color_section">
+
+    <!-- <footer id="footer" class="dark_section">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="block-header"><strong>金牌教练</strong></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="vertical-slider">
-                    </div>
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="index.html#collapse1">
-                                        体育与健身
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="index.html#">
-                                            <img class="media<ul></ul>-object" src="example/top-face1.jpg" alt="image">
-                                        </a>
-                                        <div class="media-body">
-                                           融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。
-                                            <a href="index.html#" class="theme_btn_small">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="index.html#collapse2" class="collapsed">
-                                        户外运动
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="index.html#">
-                                            <img class="media-object" src="example/top-face5.jpg" alt="image">
-                                        </a>
-                                        <div class="media-body">
-                                            融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。
-                                            <a href="index.html#" class="theme_btn_small">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="index.html#collapse3" class="collapsed">
-                                        精选课程
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="index.html#">
-                                            <img class="media-object" src="example/top-face6.jpg" alt="image">
-                                        </a>
-                                        <div class="media-body">
-                                            融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。
-                                            <a href="index.html#" class="theme_btn_small">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="index.html#collapse4" class="collapsed">
-                                        私人教练
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse4" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="index.html#">
-                                            <img class="media-object" src="example/top-face6.jpg" alt="image">
-                                        </a>
-                                        <div class="media-body">
-                                            融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。
-                                            <a href="index.html#" class="theme_btn_small">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="index.html#collapse5" class="collapsed">
-                                        有氧运动
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse5" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <div class="media">
-                                        <a class="pull-left" href="index.html#">
-                                            <img class="media-object" src="example/top-face4.jpg" alt="image">
-                                        </a>
-                                        <div class="media-body">
-                                            融合世界领先健身理念，菲乐思飞集团及旗下会所旨在让健康的生活方式渗透至每位会员的日常生活和工作。
-                                            <a href="index.html#" class="theme_btn_small">More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!--<section id="prices" class="darkgrey_section last_content_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="block-header"><strong>Membership</strong> Pricing</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <ul class="pricing-table">
-                        <li class="plan-name"><p>One Day Training</p></li>
-                        <li class="plan-price"><span>9</span> <span>99</span> <p>Day</p></li>
-                        <li class="features-list">
-                            <ul>
-                                <li>Onetime access to all clubs</li>
-                                <li>Group Trainer</li>
-                                <li>Massage</li>
-                                <li>Fitness orientation</li>
-                            </ul>
-                        </li>
-                        <li class="call-to-action"><a href="#" class="theme_btn">Sign Up!</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <ul class="pricing-table style2">
-                        <li class="plan-name"><p>Standard Training</p></li>
-                        <li class="plan-price"><span>29</span> <span>99</span> <p>Month</p></li>
-                        <li class="features-list">
-                            <ul>
-                                <li>Group Classes</li>
-                                <li>Discuss Fitness Goals</li>
-                                <li>Group Trainer</li>
-                                <li>Fitness orientation</li>
-                            </ul>
-                        </li>
-                        <li class="call-to-action"><a href="#" class="theme_btn">Sign Up!</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <ul class="pricing-table">
-                        <li class="plan-name"><p>Total Access Training</p></li>
-                        <li class="plan-price"><span>59</span> <span>99</span> <p>Month</p></li>
-                        <li class="features-list">
-                            <ul>
-                                <li>Access to all clubs</li>
-                                <li>Massage</li>
-                                <li>Personal Trainer</li>
-                                <li>Acess 24/7</li>
-                            </ul>
-                        </li>
-                        <li class="call-to-action"><a href="#" class="theme_btn">Sign Up!</a></li>
-                    </ul>
-                </div>
-
-            </div>  
-        </div>
-    </section>--><!--价格模块-->
-
-
-    <footer id="footer" class="dark_section">
-        <!-- <div class="container">
             <div class="row">
                 <div class="block widget_schedule col-md-3 col-sm-4">
                     <h3>营业时间</h3>
@@ -390,7 +216,7 @@
 
 
                 <div class="block widget_tweet col-md-3 col-sm-4">
-                    <h3>微信公众号</h3>
+                    <h3>社交网络</h3>
                     <div class="twitter"></div>
                 </div>
 
@@ -417,8 +243,8 @@
                 </div>
 
             </div>
-        </div> -->
-    </footer>
+        </div>
+    </footer> -->
  
 
     <section id="copyright" class="light_section">

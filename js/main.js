@@ -125,19 +125,30 @@ jQuery(document).ready(function() {
 
 	});
 
+	jQuery('#js-mnav li a').click(function(){
+		var ind = $(this).data('to');
+		$('#js-mtab-lst .row:eq('+ ind +')').show().siblings().hide();
+	});
+
 	//拍出数据  教练 和门店
 	function renderCS(dom, data){
 		var html = [];
-		html.push('<h3>'+ data.tit +'</h3>');
-        html.push('<div class="item">');
-        html.push('    <div class="media">');
-        html.push('        <a class="pull-left"><img class="media-object" src="'+ data.img +'" alt=""></a>');
-        html.push('        <div class="media-body">');
-        html.push('            <h4>'+ data.txt +'</h4>');
-        html.push('            <p>'+ data.info +'</p>');
-        html.push('        </div>');
-        html.push('    </div>');
-        html.push('</div>');
+		
+		for(var i = 0; i < data.length; i++){
+			var dt = data[i];
+			html.push('<div class="col-sm-4">');
+			html.push('<h3>'+ dt.tit +'</h3>');
+	        html.push('<div class="item">');
+	        html.push('    <div class="media">');
+	        html.push('        <a class="pull-left"><img class="media-object" src="'+ dt.img +'" alt=""></a>');
+	        html.push('        <div class="media-body">');
+	        html.push('            <h4>'+ dt.txt +'</h4>');
+	        html.push('            <p>'+ dt.info +'</p>');
+	        html.push('        </div>');
+	        html.push('    </div>');
+	        html.push('</div>');
+	        html.push('</div>');
+    	}
 
         dom.html(html.join(''));
 	}
