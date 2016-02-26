@@ -1,11 +1,11 @@
 var data_caoch = [{
 	'tit': '高宇',
-	'img': 'example/top-face4.jpg',
+	'img': 'img/coach_gao.jpg',
 	'txt': '力量突破',
 	'info': '告别竹竿身材，爆炸的肌肉让她更心动'
 },{
 	'tit': '杜富强',
-	'img': 'example/top-face4.jpg',
+	'img': 'img/coach_du.jpg',
 	'txt': '缓解腰背疼痛',
 	'info': '久坐办公室一族必练课程，20分钟小训练让你告别腰酸背痛'
 },{
